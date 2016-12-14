@@ -14,10 +14,11 @@
 #define COLOR_BLUE    7   
 #define COLOR_INDIGO  8  
 #define COLOR_PURPLE  9  
+#define COLOR_WHITE   10
 
 
 //Array to hold preset colors.
-const uint16_t colorArray[10][3] = {
+const uint16_t colorArray[11][3] = {
   {0,   0,   0   },        //colorLED OFF
   {155, 100, 0   },        //Warm
   {100, 130, 100 },        //Cold
@@ -28,6 +29,7 @@ const uint16_t colorArray[10][3] = {
   {0,   255, 255 },        //Lime
   {0,   0,   255 },        //Blue
   {255, 0,   255 },        //Purple
+  {255, 255, 255 },      //White
 };
 
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(LED_NUM, PIN_LED, NEO_GRB + NEO_KHZ800);
